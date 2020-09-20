@@ -76,11 +76,11 @@ select_door <- function( )
 #'   game show, Monty Hall will reveal one of the goat doors to the
 #'   contestant.
 #'
-#' @param
-#'  game = the argument containing the positions of the goats and car
+#' @param game = the argument containing the positions of the goats and car from the create_game function
 #'  from the create_game function
-#'  a.pick = the arguement containing the contestants initial door
-#'  selection from the select_door function
+#'  
+#' @param a.pick = the arguement containing the contestants initial door selection from the select_door function
+#'  
 #'
 #' @return The function returns a length 1 numeric vector indiciting
 #' whether the opened door containing the goat was door 1, 2, or 3.
@@ -127,14 +127,11 @@ open_goat_door <- function( game, a.pick )
 #'   debate about whether it was optimal to stay or switch when
 #'   given the option to switch.
 #'
-#' @param
-#'  stay = a true/false argument where we assign the "TRUE" value to if
-#'  the contestant is sticking with their initial door selection and
-#'  "FALSE" if they are staying with their initial selection.
-#'  opened.door = the argument which has the returned door from the
-#'  open_goat_door function.
-#'  a.pick = the arguement containing the contestants initial door
-#'  selection from the select_door function
+#' @param stay = a true/false argument where we assign the "TRUE" value to if the contestant is sticking with their initial door selection and "FALSE" if they are staying with their initial selection. 
+#'  
+#' @param opened.door = the argument which has the returned door from the open_goat_door function.
+#'  
+#' @param a.pick = the arguement containing the contestants initial door selection from the select_door function
 #'
 #'
 #' @return The function returns a length 1 numeric vector indictating
@@ -175,11 +172,9 @@ change_door <- function( stay=T, opened.door, a.pick )
 #'   "Let's Make a Deal" game show, Monty Hall reveals whether the
 #'   contestants door contains a car or goat.
 #'
-#' @param
-#'  final.pick = the argument which has the returned door from the
-#'  change_door function.
-#'  game = the argument containing the positions of the goats and car
-#'  from the create_game function
+#' @param final.pick = the argument which has the returned door from the change_door function.
+#'  
+#'  @param game = the argument containing the positions of the goats and car from the create_game function
 #'
 #' @return The function returns a length 3 or 4 character vector
 #'   indicating whether the contestant won or loss the game.
@@ -278,8 +273,7 @@ play_game <- function( )
 #'   given the option to switch, so this simulation was created
 #'   to test both strategies.
 #'
-#' @param
-#'  n = The number of times the Monty Hall game will be run.
+#' @param n = The number of times the Monty Hall game will be run.
 #'
 #' @return The function returns a data frame with the results of
 #' the Monty Hall game simulations. The rows contain the game strategy
