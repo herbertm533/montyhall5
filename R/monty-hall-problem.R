@@ -25,6 +25,10 @@
 #' @examples
 #'   create_game()
 #'
+#' \dontrun{
+#' create_game()
+#' }
+#'
 #' @export
 create_game <- function()
 {
@@ -53,6 +57,11 @@ create_game <- function()
 #'
 #' @examples
 #'   select_door()
+#'
+#' \dontrun{
+#' select_door()
+#' }
+#'
 #'
 #' @export
 select_door <- function( )
@@ -89,6 +98,10 @@ select_door <- function( )
 #'
 #' @examples
 #'   open_goat_door( game, a.pick )
+#'
+#' \dontrun{
+#' open_goat_door( game, a.pick )
+#' }
 #'
 #' @export
 open_goat_door <- function( game, a.pick )
@@ -141,6 +154,10 @@ open_goat_door <- function( game, a.pick )
 #' @examples
 #'   change_door( stay=T, opened.door, a.pick )
 #'
+#' \dontrun{
+#' change_door( stay=T, opened.door, a.pick )
+#' }
+#'
 #' @export
 change_door <- function( stay=T, opened.door, a.pick )
 {
@@ -181,6 +198,10 @@ change_door <- function( stay=T, opened.door, a.pick )
 #'
 #' @examples
 #'   determine_winner( final.pick, game )
+#'
+#' \dontrun{
+#' determine_winner( final.pick, game )
+#' }
 #'
 #' @export
 determine_winner <- function( final.pick, game )
@@ -228,6 +249,10 @@ determine_winner <- function( final.pick, game )
 #'
 #' @examples
 #'   play_game()
+#'
+#' \dontrun{
+#' play_game()
+#' }
 #'
 #' @export
 play_game <- function( )
@@ -281,6 +306,10 @@ play_game <- function( )
 #'
 #' @examples
 #'   play_n_games( n=100 )
+#'
+#' \dontrun{
+#' play_n_games( n=100 )
+#' }
 #'
 #' @export
 play_n_games <- function( n=100 )
